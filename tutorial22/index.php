@@ -3,16 +3,17 @@
 <body>
 
 <?php
+    if($_POST) {
         $servername = "localhost";
-        $username = "admin";
-        $password = "12345";
+        $username = "root";
+        $password = "";
         $dbname = "SensitiveDaten";
 
         $conn = new mysqli($servername, $username, $password, $dbname);
         if ($conn->connect_error) {
             die("awww");
         }
-        $sql = $conn->prepare("SELECT Username, Password FROM users WHERE Username=? AND Password=?");
+        $sql = $conn->prepare("SELECT Name, Passwort FROM user WHERE Name=? AND Passwort=?");
         $sql->bind_param("ss", $_POST["username"], $_POST["passwort"]);
         $sql->execute();
         $sql->bind_result($res_user, $res_pass);
@@ -21,8 +22,9 @@
             echo $res_user . " - " . $res_pass;
         }
         $sql->close();
+    }
 ?>
-<form action="sqli.php" method=""post">
+<form action="index.php" method="post">
     Username: <input type="text" name="username"/>
     Passwort: <input type="text" name="passwort"/>
     <input type="submit" value="Einloggen" name="submit"/>
