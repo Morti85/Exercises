@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
+
+<head>
+    <Meta charset = "UTF-8">
+    <title> Korrekter Weg! </title>
+</head>
 <body>
 
 <?php
@@ -11,7 +16,7 @@
 
         $conn = new mysqli($servername, $username, $password, $dbname);
         if ($conn->connect_error) {
-            die("awww");
+            die("Du kommsch hier nicht rein! Nicht verbunden. :-(");
         }
         $sql = $conn->prepare("SELECT Name, Passwort FROM user WHERE Name=? AND Passwort=?");
         $sql->bind_param("ss", $_POST["username"], $_POST["passwort"]);
