@@ -15,7 +15,7 @@
 
     $conn = new mysqli($servername, $username, $password, $dbname);
     if ($conn->connect_error) {
-        die("awww");
+        die("Nope! Nicht verbunden!");
     }
     $sql = "SELECT Username, Password FROM users WHERE Username='" .
     $_POST["username"] . "' AND Password='" . $_POST["passwort"] . "'";
