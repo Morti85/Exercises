@@ -1,0 +1,105 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.playerbox {
+    width: 100%;
+    background: #000000;
+    display: flex;
+    justify-content: space-between;
+    border-left: solid 3px black;
+    border-top: solid 3px black;
+    border-right: solid 3px black;
+}
+
+.nowbox {
+    width: 50%;
+    text-align: center;
+}
+
+.nextbox {
+    width: 50%;
+    text-align: center;
+}
+
+.footbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-right: solid 3px black;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.nowplay {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    color: aliceblue;
+}
+
+.albenbild {
+    width: 200px;
+    height: 200px;
+}
+
+.nextplay {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    color: aliceblue;
+}
+
+.leftsidebox {
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+.rightsidebox {
+    float: right;
+    width: 25%;
+    height: 100%;
+}
+
+.p {
+    text-align: center;
+    color: aliceblue;
+}
+
+.button {
+    padding: 5px;
+    width: 75px;
+    height: 75px;
+    background-size: cover;
+}
+
+.playbutton {background-image:url("img/backleft1.jpg");}
+.playbutton:hover {background-image:url("img/backleft.jpg");}
+
+.playbutton1 {background-image:url("img/stopbutt1.jpg");}
+.playbutton1:hover {background-image:url("img/stopbutt.jpg");}
+
+.playbutton2 {background-image:url("img/playbutt1.jpg");}
+.playbutton2:hover {background-image:url("img/playbutt.jpg");}
+
+.playbutton3 {background-image:url("img/pausebutt1.jpg");}
+.playbutton3:hover {background-image:url("img/pausebutt.jpg");}
+
+.playbutton4 {background-image:url("img/backright1.jpg");}
+.playbutton4:hover {background-image:url("img/backright.jpg");}
+
+.button {
+    text-decoration:underline;
+    cursor:url('metalhand.cur'), url(' metalhand.png'), url(' metalhand.gif'), auto;
+}
+
+body {
+    font-family: 'Ranchers', cursive;
+}
