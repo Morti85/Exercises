@@ -1,0 +1,130 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana';
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100vw;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.bild {
+    height: 200px;
+}
+
+.textlinie {
+    display: flex;
+    justify-content: center;
+    height: 32px;
+}
+
+.txt {
+    position: relative;
+    color: #BE653D;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.txt::before {
+    content: "";
+    display: block;
+    width: 458px;
+    height: 2px;
+    background: #BC884E;
+    left: -472px;
+    top: 50%;
+    position: absolute;
+}
+
+.txt::after {
+    content: "";
+    display: block;
+    width: 458px;
+    height: 2px;
+    background: #BC884E;
+    right: -472px;
+    top: 50%;
+    position: absolute;
+}
+
+.spruche {
+    font-family: "Roboto Light";
+    font-size: 1.7rem;
+}
+
+.mittlererContainer {
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.spruchErzeuger {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.erzeugtSpruch {
+    height: 170px;
+    width: 170px;
+    background: #BE653D;
+    color: #BC884E;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 16px;
+    transform: rotate(-135deg);
+    border-style: none;
+    border-radius: 90% 0 90% 0;
+    outline: none;
+}
+
+.erzeugung {
+    transform: rotate(135deg);
+}
+
+.erzeugtSpruch:hover {
+    background: #BC884E;
+    color: #BE653D;
+    font-weight: bold;
+}
+
+.ausgabe {
+    width: 100vw;
+    text-align: center;
+    margin-top: 62px;
+}
+
+.neuerSpruch {
+    font-family: Verdana;
+    font-size: 20px;
+    font-weight: bold;
+    color: #BC884E;
+    letter-spacing: 1px;
+}
+
+.spruchzaehler {
+    display: flex;
+    justify-content: center;
+}
+
+.zaehler {
+    width: 1340px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #BC884E;
+    padding: 20px 0;
+    border-top: solid 2px #BE653D;
+    border-bottom: solid 2px #BE653D;
+}

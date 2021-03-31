@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mandala Spruchgenerator</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+<div class="header">
+    <img class="bild" src="./img/mandala.png" alt="mandalalalala">
+</div>
+<div class="textlinie">
+    <div>
+        <p class="txt"> Mortys <span class="spruche">Mandala Spruchgenerator</span> </p>
+    </div>
+</div>
+<div class="mittlererContainer">
+    <div class="spruchErzeuger">
+        <button class="erzeugtSpruch">
+            <div class="erzeugung">Spruch generieren</div>
+        </button>
+        <div class="ausgabe">
+            <div class="neuerSpruch"> <-- Hier erscheint nach einem Klick dein neuer Spruch --> </div>
+        </div>
+    </div>
+
+</div>
+<div class="spruchzaehler">
+    <div class="zaehler">
+        Du hast bereits <span class="counter">0</span>x geklickt. <br><br>
+        Dein letzter Spruch war: <br><span class="lastspruch"></span>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/mandala.js"></script>
+</body>
+</html>

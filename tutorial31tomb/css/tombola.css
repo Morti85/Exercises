@@ -1,0 +1,159 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #08000F;
+    color: #BCF506;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.logo {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.blume {
+    height: 200px;
+}
+
+.linetext{
+    display: flex;
+    justify-content: center;
+    height: 32px;
+}
+
+.text{
+    position: relative;
+    color: #636CAB;
+    font-size: 1.3rem;
+}
+
+.text::before {
+    content: "";
+    display: block;
+    width: 458px;
+    height: 2px;
+    background: #70AAE2;
+    left: -472px;
+    top: 50%;
+    position: absolute;
+}
+
+.text::after {
+    content: "";
+    display: block;
+    width: 458px;
+    height: 2px;
+    background: #70AAE2;
+    right: -472px;
+    top: 50%;
+    position: absolute;
+}
+
+.xmas {
+    font-family: 'Rozha One', serif;
+    font-size: 1.7rem;
+}
+
+.numshow {
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.create {
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 80px;
+}
+
+.generateNumber {
+    height: 170px;
+    width: 170px;
+    background: #5C4A8E;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    transform: rotate(-45deg);
+    border-style: none;
+    border-radius: 50% 50% 50% 0;
+    outline: none;
+}
+
+.turn {
+    transform: rotate(45deg);
+}
+
+.generateNumber:hover {
+    background: #636CAB;
+    color: #A574FF;
+    font-weight: bold;
+}
+
+.output {
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.newNumber{
+    font-size: 10rem;
+    font-weight: bolder;
+    color: #562675;
+    letter-spacing: 10px;
+}
+
+.countborder {
+    display: flex;
+    justify-content: center;
+}
+
+.count {
+    width: 1264px;
+    text-align: center;
+    font-size: 3rem;
+    color: #698CC6;
+    padding: 10px 0;
+    border-top: solid 2px #698CC6;
+    border-bottom: solid 2px #698CC6;
+}
+
+.exnum {
+    width: 100vw;
+    height: 147px;
+    display: flex;
+    background-color: #08000F;
+}
+
+.unten {
+    font-family: arial;
+    padding-left: 10px;
+    width: 100%;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.p1 {
+    color:#636CAB;
+}
+
+.exitingNumbers {
+    display: none;
+}
+
+.pullcomma {
+    color: #70AAE2;
+    padding: 0 200px;
+}
