@@ -15,4 +15,4 @@ if(!isset($_SESSION["username"])){
 <h1>Top Secret</h1>
 <a href="logout.php">Abmelden</a>
 </body>
-</html>
+</html> 
